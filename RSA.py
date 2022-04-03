@@ -64,7 +64,8 @@ elif(eleccion == 2):
     ciphertext, tag = cipher_aes.encrypt_and_digest(texto)
     [ file_out.write(x) for x in (enc_session_key, cipher_aes.nonce, tag, ciphertext) ]
     file_out.close()
-
+    print(" ")
+    
 elif(eleccion == 3):
 
     nombre_archivo = input("Escribe el texto a encriptar: \n")
